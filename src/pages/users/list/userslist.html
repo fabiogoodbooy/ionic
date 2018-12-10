@@ -1,0 +1,14 @@
+<ion-content padding>
+    <ion-grid>
+        <ion-row>
+            <ion-col><b>ID</b></ion-col>
+            <ion-col><b>Name</b></ion-col>
+            <ion-col><b>Email</b></ion-col>
+        </ion-row>
+        <ion-row text-wrap *ngFor="let user of usersList">
+            <ion-col>{{user.id}}</ion-col>
+            <ion-col>{{user.name}}</ion-col>
+            <ion-col>{{user.email}}</ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+  <form [formGroup]='operation' (ngSubmit)='calculate()'>
+    <ion-item>
+     <ion-label>Numero 1</ion-label>
+     <ion-input type='text' formControlName='n1'></ion-input> 
+    </ion-item>
+    <ion-item>
+      <ion-label>NUmero 2</ion-label>
+      <ion-input type='text' formControlName='n2'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-select formControlName='op'>
+        <ion-option value='+'>+</ion-option>
+        <ion-option value='-'>-</ion-option>
+        <ion-option value='*'>*</ion-option>
+        <ion-option value='/'>/</ion-option>
+      </ion-select>
+    </ion-item>
+    <button ion-button type="submit" [disabled]='!operation.valid' >Valide</button>
+  </form>
+</ion-content>
