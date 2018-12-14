@@ -14,6 +14,7 @@ import { Operator } from '../services/opertor';
 import { Userslist } from '../pages/users/list/userslist';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersProvider } from '../services/users';
+import { Useradd } from '../pages/users/add/useradd';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UsersProvider } from '../services/users';
     ContactPage,
     HomePage,
     TabsPage,
-    Userslist
+    Userslist,
+    Useradd
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { UsersProvider } from '../services/users';
     ContactPage,
     HomePage,
     TabsPage,
-    Userslist
+    Userslist,
+    Useradd
   ],
   providers: [
     StatusBar,

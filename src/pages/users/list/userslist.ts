@@ -12,7 +12,8 @@ export class Userslist{
         this.users.all().subscribe((userTabel:any)=>
         {
 
-            this.usersList = userTabel;
+            this.usersList = userTabel.hits.hits;
+            console.log(this.usersList);
        
     });
     //this.user = navParams.get('user');

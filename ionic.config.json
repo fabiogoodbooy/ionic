@@ -1,5 +1,11 @@
 {
   "name": "groupe b",
   "integrations": {},
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+
+"proxies":[
+  {
+"path" : "/epi",
+"proxyUrl": "http://localhost:9200/epi"
+  }]
 }
