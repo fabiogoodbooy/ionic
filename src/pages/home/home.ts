@@ -15,6 +15,8 @@ operation : FormGroup;
       n2:['',[Validators.required,Validators.min(0)]],
       op:['+']
     })
+    //localStorage.clear();
+    alert(localStorage.getItem('email'))
     
   }
 

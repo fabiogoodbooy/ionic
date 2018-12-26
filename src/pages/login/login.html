@@ -1,0 +1,13 @@
+<form [formGroup]='loginForm'(ngSubmit)='login()' >
+   
+    <ion-item>
+        <ion-label>email</ion-label>
+        <ion-input type='text' formControlName='email' [(ngModel)] ="email" ></ion-input> 
+       </ion-item>
+       <ion-item>
+        <ion-label>password</ion-label>
+        <ion-input type='password' formControlName='password' ></ion-input> 
+       </ion-item>
+       <button ion-button type="submit" [disabled]='!loginForm.valid'>Valide</button>
+      
+    </form>

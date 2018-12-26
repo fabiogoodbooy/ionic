@@ -8,8 +8,10 @@
         
         <ion-row text-wrap *ngFor="let user of usersList">
             <ion-col>{{user._id}}</ion-col>
-            
-            
+            <ion-col>{{user._source.name}}</ion-col>
+            <ion-col>{{user._source.email}}</ion-col>
+            <button ion-button [navPush]="Useradd" [navParams]="{'id': user._id}">Edit</button>
         </ion-row>
+
     </ion-grid>
 </ion-content>

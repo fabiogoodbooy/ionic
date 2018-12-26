@@ -15,6 +15,7 @@ import { Userslist } from '../pages/users/list/userslist';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersProvider } from '../services/users';
 import { Useradd } from '../pages/users/add/useradd';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Useradd } from '../pages/users/add/useradd';
     HomePage,
     TabsPage,
     Userslist,
-    Useradd
+    Useradd,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { Useradd } from '../pages/users/add/useradd';
     HomePage,
     TabsPage,
     Userslist,
-    Useradd
+    Useradd,
+    LoginPage
   ],
   providers: [
     StatusBar,

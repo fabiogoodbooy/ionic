@@ -15,6 +15,15 @@ export class UsersProvider{
     }
     add(users){
     let url ='/epi/user/'+users.id;
-    return this.http.post(url,{"name":users,"email":users.eamil},{headers: this.header});       
+    return this.http.post(url,{"name":users.name,"email":users.email},{headers: this.header});       
+    }
+
+    getuser(id){
+        let url ='epi/user/'+id;
+        return this.http.get(url,{headers:this.header});
+    }
+    login(user){
+        let url ='/epi/user/_search?q=email:'+user.email;
+        return this.http.get(url,{headers:this.header});
     }
 }

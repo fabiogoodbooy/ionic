@@ -1,15 +1,17 @@
 <form [formGroup]='userForm'(ngSubmit)='add()' >
     <ion-item>
      <ion-label>ID</ion-label>
-     <ion-input type='text'formControlName='id'></ion-input> 
+     <ion-input type='text'formControlName='id' value={{rstId}}></ion-input> 
     </ion-item>
     <ion-item>
         <ion-label>Name</ion-label>
-        <ion-input type='text' formControlName='name'></ion-input> 
+        <ion-input type='text' formControlName='name' value={{rstName}}></ion-input> 
        </ion-item>
        <ion-item>
         <ion-label>email</ion-label>
-        <ion-input type='text' formControlName='email'></ion-input> 
+        <ion-input type='text' formControlName='email' value={{rstEmail}}></ion-input> 
        </ion-item>
        <button ion-button type="submit" [disabled]='!userForm.valid'>Valide</button>
+      
     </form>
+   
